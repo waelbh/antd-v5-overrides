@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# React AntD v5 Style Override Example
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates how to override Ant Design (AntD) v5 styles using class names in a React application. It utilizes Vite as the build tool and LESS for styling.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js (LTS version recommended)
+- npm or yarn
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository:
+   
+git clone https://github.com/your-repository/react-antd-style-override.git
 
-- Configure the top-level `parserOptions` property like this:
+2. Navigate to the project directory:
+   
+cd react-antd-style-override
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+3. Install dependencies:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+npm install or yarn
+
+## Running the Application
+
+To start the development server, run:
+
+npm run dev or yarn dev
+
+
+The application will be available at `http://localhost:3000`.
+
+## Customizing Styles
+
+Styles can be overridden by modifying the `.less` files. Ensure that your class names correctly target the AntD components you wish to customize.
+
+
+
